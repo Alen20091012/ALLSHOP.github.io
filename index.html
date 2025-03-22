@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>ALLSHOP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>ALLSHOP</h1>
+        <nav>
+            <a href="#catalog">Каталог</a>
+            <a href="#about">О нас</a>
+            <a href="#contacts">Контакты</a>
+            <a href="#cart">Корзина (<span id="cart-count">0</span>)</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="catalog">
+            <h2>Каталог</h2>
+            <div class="categories">
+                <button class="category-button" data-category="electronics">Электроника</button>
+                <button class="category-button" data-category="clothes">Одежда</button>
+                <button class="category-button" data-category="books">Книги</button>
+                <button class="category-button" data-category="all">Все товары</button>
+
+            </div>
+            <div class="products-grid">
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>О нас - </h2>
+            <p>ALLSHOP - ваш универсальный магазин</p>
+          <p>Мы предлагаем широкий выбор товаров: от новейших гаджетов до стильной одежды и захватывающих книг</p>
+          <p>Мы ценим наших клиентов и стремимся к тому, чтобы каждый покупатель получил отличный опыт покупок</p>
+
+      <p>  Почему стоит выбирать нас:</p>
+    <p>*  "Широкий ассортимент товаров."</p>
+  <p>  *  "Высокое качество продукции."</p>
+  <p>  *  "Доступные цены."</p>
+    <p>*  "Быстрая доставка."</p>
+    <p>*  "Отличное обслуживание клиентов."</p>
+        </section>
+
+        <section id="contacts">
+            <h2>Контакты</h2>
+            <p>+7(967)370-92-58</p>
+        </section>
+
+        <section id="cart">
+            <h2>Корзина</h2>
+            <div id="cart-items">
+                <!-- Товары корзины будут отображаться здесь -->
+            </div>
+            <p>Итого: <span id="cart-total">0</span> ₽</p>
+            <button id="checkout-button">Оформить заказ</button>
+        </section>
+ </main>
+
+    <footer>
+        <p>&copy; 2025 ALLSHOP</p>
+    </footer>
+  <script src="script.js"></script>
+</body>
+</html>
