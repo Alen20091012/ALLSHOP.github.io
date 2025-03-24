@@ -5,7 +5,7 @@ const productsData = {
     ],
     clothes: [
         { id: 3, name: 'Футболка', description: 'Хлопковая футболка', price: 1000, imageUrl: 'https://images.51microshop.com/713/product/20180725/copy_of_Balenciaga_BB_logo_T_shirts_1532528558481_4.jpg', category: 'clothes' },
-        { id: 4, name: 'Джинсы', description: 'Синие джинсы', price: 3000, imageUrl: 'https://i.ebayimg.com/00/s/Nzg4WDk0MA==/z/6b4AAOSwwk5h1e63/$_57.JPG?set_id=8800005007', category: 'clothes' }
+        { id: 4, name: 'Джинсы', description: 'Синие джинсы', price: 3000, imageUrl: 'https://cdn.aizel.ru/i/845x1079/651357.jpg', category: 'clothes' }
     ],
     books: [
         { id: 5, name: 'Война и мир', description: 'класика', price: 500, imageUrl: 'https://sun9-2.userapi.com/impf/9NARYsi__uQ--nbgZpxi9t6_F5xDefPh1khE-w/0T0rF9WcQo8.jpg?size=550x535&quality=96&sign=7b4b75cd331a1f2e104051668c7eea64&type=album', category: 'books' },
@@ -19,6 +19,16 @@ let cart = [];
 document.addEventListener('DOMContentLoaded', () => {
     displayProducts('all'); // Показываем все товары по умолчанию
     updateCartUI();
+
+    // Добавляем обработчик клика на кнопку "Оформить заказ"
+    const checkoutButton = document.getElementById("checkout-button");
+    if (checkoutButton) {
+      checkoutButton.addEventListener("click", function() {
+        window.location.href = "https://t.me/orderSTUF";
+      });
+    } else {
+      console.error("Кнопка 'Оформить заказ' не найдена.");
+    }
 });
 
 // Функция для отображения товаров
@@ -48,13 +58,11 @@ function displayProducts(category) {
 
         const h3 = document.createElement('h3');
         h3.textContent = product.name;
-
         const pDescription = document.createElement('p');
         pDescription.textContent = product.description;
 
         const pPrice = document.createElement('p');
         pPrice.textContent = `Цена: ${product.price} ₽`;
-
         const button = document.createElement('button');
         button.textContent = 'Добавить в корзину';
         button.onclick = () => addToCart(product.id);
