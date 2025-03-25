@@ -1,24 +1,24 @@
 const productsData = {
     electronics: [
-        { id: 1, name: 'CG Therma-FIT ADV Lunar Lake', description: 'Размер:XL(маломерит на один размер)', price: 6500, imageUrl: 'images/1.jpg', category: 'Clothes' },
-        { id: 2, name: 'Baggy jeans Dime black', description: 'Размер: S, M , L, XL', price:3200 , imageUrl: 'images/1 (2).jpg', category: 'Clothes' },
-        { id: 3, name: 'Polo Ralph Lauren zip hoodie ', description: 'Размер:L', price: 3200, imageUrl: 'images/1 (3).jpg', category: 'Clothes' },
-        { id: 4, name: 'Polo Ralph Lauren zip hoodie ', description: 'Размер:L', price: 3200, imageUrl: 'images/1 (4).jpg', category: 'Clothes' },
-        { id: 5, name: 'Футболка Rules the world Corteiz', description: 'Размер: L', price: 1590, imageUrl: 'images/1 (5).jpg', category: 'Clothes' },
-        { id: 6, name: 'Футболка Gallery Dept', description: '3XL (маломерит на 3 размера)', price: 1590, imageUrl: 'images/1 (6).jpg', category: 'Clothes' },
-        { id: 7, name: "Штаны Nike Tech Fleece Nocta", description: "Размер: XL", price: 3290, imageUrl: 'images/1 (7).jpg', category: 'Clothes' },
-        { id: 8, name: 'Футболка Corteiz', description: 'Размер: XXL (маломерит на размер)', price: 1290, imageUrl: 'images/1 (8).jpg', category: 'Clothes' },
-        { id: 9, name: 'Zip hoodie Lactose ', description: 'Размер: L', price: 2600, imageUrl: 'images/1 (9).jpg', category: 'Clothes' },
+        { id: 1, name: 'CG Therma-FIT ADV Lunar Lake', description: 'Размер:XL(маломерит на один размер)', price: 6500, imageUrl: 'images/1.png', category: 'Clothes' },
+        { id: 2, name: 'Baggy jeans Dime black', description: 'Размер: S, M , L, XL', price:3200 , imageUrl: 'images/1 (2).png', category: 'Clothes' },
+        { id: 3, name: 'Polo Ralph Lauren zip hoodie ', description: 'Размер:L', price: 3200, imageUrl: 'images/1 (3).png', category: 'Clothes' },
+        { id: 4, name: 'Polo Ralph Lauren zip hoodie ', description: 'Размер:L', price: 3200, imageUrl: 'images/1 (4).png', category: 'Clothes' },
+        { id: 5, name: 'Футболка Rules the world Corteiz', description: 'Размер: L', price: 1590, imageUrl: 'images/1 (5).png', category: 'Clothes' },
+        { id: 6, name: 'Футболка Gallery Dept', description: '3XL (маломерит на 3 размера)', price: 1590, imageUrl: 'images/1 (6).png', category: 'Clothes' },
+        { id: 7, name: "Штаны Nike Tech Fleece Nocta", description: "Размер: XL", price: 3290, imageUrl: 'images/1 (7).png', category: 'Clothes' },
+        { id: 8, name: 'Футболка Corteiz', description: 'Размер: XXL (маломерит на размер)', price: 1290, imageUrl: 'images/1 (8).png', category: 'Clothes' },
+        { id: 9, name: 'Zip hoodie Lactose ', description: 'Размер: L', price: 2600, imageUrl: 'images/1 (9).png', category: 'Clothes' },
     ],
     clothes: [
         { id: 10, name: 'Nike air max 95 Corteiz', description: 'Размер:44', price: 3690, imageUrl: 'images/2.jpg', category: 'Footwear' },
     ],
     books: [
-            { id: 11, name: 'Шапка Moncler', description: 'Размер: one size', price: 1300, imageUrl: 'images/3.jpg', category: 'Accessories' },
-            { id: 12, name: 'Шапка Moncler', description: 'Размер: one size', price: 1300, imageUrl: 'images/3 (2).jpg', category: 'Accessories' },
-            { id: 13, name: 'Шапка Glo Gang', description: 'Размер: one size', price: 800, imageUrl: 'images/3 (3).jpg', category: 'Accessories' },
-            { id: 14, name: 'Картхолдер Goyard', description: 'ее', price: 800, imageUrl: 'images/3 (4).jpg', category: 'Accessories' },
-            { id: 15, name: 'Шапка Aphex Twin', description: 'Размер: One size', price: 1100, imageUrl: 'images/3 (5).jpg', category: 'Accessories' },
+            { id: 11, name: 'Шапка Moncler', description: 'Размер: one size', price: 1300, imageUrl: 'images/3.png', category: 'Accessories' },
+            { id: 12, name: 'Шапка Moncler', description: 'Размер: one size', price: 1300, imageUrl: 'images/3 (2).png', category: 'Accessories' },
+            { id: 13, name: 'Шапка Glo Gang', description: 'Размер: one size', price: 800, imageUrl: 'images/3 (3).png', category: 'Accessories' },
+            { id: 14, name: 'Картхолдер Goyard', description: 'ее', price: 800, imageUrl: 'images/3 (4).png', category: 'Accessories' },
+            { id: 15, name: 'Шапка Aphex Twin', description: 'Размер: One size', price: 1100, imageUrl: 'images/3 (5).png', category: 'Accessories' },
         ]
 };
 
