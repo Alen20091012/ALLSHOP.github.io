@@ -100,6 +100,7 @@ footer {
 }
 
 /* Стили категорий */
+/* Стили категорий */
 .categories {
     display: flex;
     justify-content: center;
@@ -114,12 +115,30 @@ footer {
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s;
+
+    /*  Добавлено:  Измените эти значения  */
+    white-space: nowrap; /* Предотвращает перенос текста на новую строку */
+    /*  или:  */
+    /* word-break: break-word;   Разрешает ломать длинные слова, если не помещаются */
+    /*  или: */
+    /* overflow-wrap: break-word; */
+
+    min-width: 20px;    /*  Задайте минимальную ширину, чтобы кнопки не становились слишком узкими */
+    /*width: auto;  Удалите, если задана фиксированная ширина. auto позволит кнопке подстраиваться под контент*/
 }
 
 .category-button:hover {
     background-color: #ddd;
 }
 
+/* Media Query для адаптивности */
+@media (max-width: 500px) { /* Или любой другой брейкпойнт */
+    .category-button {
+        font-size: 8px;   /* Уменьшите размер шрифта на маленьких экранах */
+        padding: 5px 8px;  /* Уменьшите отступы, если необходимо */
+        margin: 0 5px;      /* Уменьшите отступы между кнопками */
+    }
+}
 /* Стили товаров */
 .products-grid {
     display: grid;
